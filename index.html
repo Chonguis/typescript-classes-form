@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Typescript</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <template id="formTemplate">
+    <form>
+      <div>
+        <label for="title"></label>
+        <input type="text" id="title">
+      </div>
+      <div>
+        <label for="description"></label>
+        <input type="text" id="description">
+      </div>
+        <div>
+          <label for="people"></label>
+          <input type="number" id="people" step=1 start=0 end=10>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+  </template>
+  <template id="listTemplate">
+    <section>
+      <h3></h3>
+      <ul></ul>
+    </section>
+  </template>
+  <div id="app"></div>
+
+  <script src="./dist/app.js"></script>
+</body>
+</html>
